@@ -1,0 +1,6 @@
+Os tipos básicos, pré declarados servem de tijolos para a construção dos tipos não declarados e estruturas de dados na 
+linguagem de programação GO.
+
+Arrays e Structs são tipos agregados, seus valores são concatenações de outros valores em memória. Arrays são homogêneas-
+todos seus elementos tem o mesmo tipo- Enquanto Structs são heterogêneas. Tanto o Arrays como a Structs possui seu tamanho
+fixo. Por outro lado, Slices e Maps são estruturas de dados dinâmicas que crescem a medida que os valores são adicionados.

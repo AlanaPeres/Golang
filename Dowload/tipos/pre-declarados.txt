@@ -1,0 +1,40 @@
+
+Tipos pré-declarados, tipos definidos e parâmetros de tipo são chamados de tipos nomeados . Um alias denota um tipo 
+nomeado se o tipo fornecido na declaração do alias for um tipo nomeado.
+
+Tipos booleanos
+Um tipo booleano representa o conjunto de valores de verdade booleanos indicados pelas constantes pré-declaradas true e 
+false. O tipo booleano pré-declarado é bool; é um tipo definido .
+
+Tipos numéricos
+Um tipo inteiro , ponto flutuante ou complexo representa o conjunto de valores inteiros, de ponto flutuante ou complexos, 
+respectivamente. Eles são chamados coletivamente de tipos numéricos . Os tipos numéricos independentes de arquitetura 
+pré-declarados são:
+
+uint8 o conjunto de todos os inteiros de 8 bits sem sinal (0 a 255)
+uint16 o conjunto de todos os inteiros de 16 bits sem sinal (0 a 65535)
+uint32 o conjunto de todos os inteiros de 32 bits não assinados (0 a 4294967295)
+uint64 o conjunto de todos os inteiros de 64 bits não assinados (0 a 18446744073709551615)
+
+int8 o conjunto de todos os inteiros de 8 bits com sinal (-128 a 127)
+int16 o conjunto de todos os inteiros de 16 bits assinados (-32768 a 32767)
+int32 o conjunto de todos os inteiros de 32 bits assinados (-2147483648 a 2147483647)
+int64 o conjunto de todos os inteiros de 64 bits assinados (-9223372036854775808 a 9223372036854775807)
+
+float32 o conjunto de todos os números de ponto flutuante de 32 bits IEEE-754
+float64 o conjunto de todos os números de ponto flutuante IEEE-754 de 64 bits
+
+complex64 o conjunto de todos os números complexos com float32 partes reais e imaginárias
+complex128 o conjunto de todos os números complexos com float64 partes reais e imaginárias
+
+alias de bytes para uint8
+alias de runa para int32
+
+As conversões explícitas são necessárias quando diferentes tipos numéricos são misturados em uma expressão ou atribuição. 
+Por exemplo, int32e int não são do mesmo tipo, embora possam ter o mesmo tamanho em uma arquitetura específica.
+
+Um tipo de string representa o conjunto de valores de string. Um valor de string é uma sequência (possivelmente vazia) de
+bytes. O número de bytes é chamado de comprimento da string e nunca é negativo. Strings são imutáveis: uma vez criadas, 
+é impossível alterar o conteúdo de uma string. O tipo de string pré-declarado é string; é um tipo definido .
+O comprimento de uma string spode ser descoberto usando a função interna len. O comprimento é uma constante de tempo de 
+compilação se a string for uma constante. Os bytes de uma string podem ser acessados ​​por índices inteiros de 0 a len(s)-1.

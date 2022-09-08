@@ -1,0 +1,9 @@
+O pacote fmt implementa E/S formatada com funções análogas às printf e scanf do C, porém de forma mais simples.
+
+Os verbos:
+%v o valor em um formato padrão
+	ao imprimir structs, o sinalizador de adição (%+v) adiciona nomes de campo
+%#v uma representação de sintaxe Go do valor
+%T uma representação de sintaxe Go do tipo do valor
+%% um sinal de porcentagem literal; não consome valor
+

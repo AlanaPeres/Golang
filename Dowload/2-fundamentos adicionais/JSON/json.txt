@@ -1,0 +1,15 @@
+JSON É MUITO UTILIZADO QUANDO QUEREMOS ENVIAR MENSAGENS DE UM SERVIDOR PARA UMA PÁGINA WEB.
+O que e o JSON?
+O formato JSON (JavaScript Object Notation) é um formato aberto usado como alternativa ao XML para a transferência de dados estruturados entre um servidor
+de Web e uma aplicação Web
+
+No sistema ele é parecido com a sintaxe de struct{chave e valor} e no go temos uma ferramenta de transformar uma struct em JSON:
+{
+    "nome": " "
+    "idade": 15
+    "cursos": [
+        "nome": "Engenharia"
+    ]
+}
+
+Em go temos um pacote que é muito utilizado para utilizar o JSON, ele possui dois métodos, para fazer conversão de struct p/ json e de json p/ struct.

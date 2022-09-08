@@ -1,0 +1,19 @@
+                        //teste de unidade, é a função que vai testar a menor unidade do meu código, nesse caso é uma função. 
+package endereco        //os testes são os únicos que podem conter mais de um pacote,
+                        //o teste de uma func nunca fica no mesmo arquivo que ela, para isso precisamos abrir O arquivo precisa _text.go para que o go reconheça que é um arquivo de test.
+
+import "testing"        //esse pacote é o padrão do go para testes
+
+func TestTiposDeEndereço(t *testing.T) {         //essa sintaxe é que o go vai saber que essa função é para ser testada. Sintaxe obrigatória.
+	enderecoParaTeste := "Avenida Paulista"        //se eu colocar rua, ou qualquer outra coisa != do esperado, meu test vai cair no Error.
+	tipoDeEnderecoEsperado := "Avenida"
+	tipoDeEnderecoRecebido := TiposDeEndereco(enderecoParaTeste)
+
+	if tipoDeEnderecoRecebido != tipoDeEnderecoEsperado {           //se a minha função cair aqui, vamos considerar que meu teste quebrou, caso contrario o teste passou.
+		t.Errorf("O tipo recebido é diferente do esperado! Esperava %s e recebeu %s",
+		tipoDeEnderecoEsperado,
+		tiposDeEnderecoRecebido,
+		)
+	}                               //para chamar é só escrever no terminal go test.
+
+}

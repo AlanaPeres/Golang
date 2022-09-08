@@ -1,0 +1,14 @@
+
+
+//HTTP É UM PROTOCOLO DE COMUNICAÇÃO - BASE DE COMUNICAÇÃO WEB
+
+// CLIENTE FAZ UMA REQUISIÇÃO (REQUEST) - O SEVIDOR PROCESSA A REQUISIÇÃO E ENVIA A RESPOSTA(RESPONSE)
+
+//ROTAS - IDENTIFICA O TIPO DE MENSAGEM ESTÁ SENDO ENVIADA E QUE TIPO DE PROCESSAMENTO O SERVIDOR TERÁ QUE FAZER EM CIMA DESSA MENSAGEM. (Ex: em um e-commerce tem a parte de cadastro, onde a mensagem são os dados pessoais e tem tbm a parte do carrinho, então o servidor precisa identificar qual seria a resposta)
+	// as rotas possuem 2 componentes importantes para conhecer que é o :
+		// URI - Identificador de Recurso: Identifica se determinadas informações tem a ver com o produto, inf pessoais, notícias, etc
+		//Método - Método é utilizado para que vc consiga dizer oq quer fazer com o Recurso que acabou de utilizar : GET, POST, PUT, DELETE (Existem mais.)
+					//GET BUSCAR DADOS
+					//POST CADASTRAR DADOS
+					//PUT É UTILIZADO PARA ATUALIZAÇÕES
+					//DELETE É PARA DELETAR DADOS DA BASE
