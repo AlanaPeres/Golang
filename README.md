@@ -1,2 +1,2 @@
 # Golang
- Fundamentos da Linguagem
+ Aprendendo os fundamentos da Linguagem.
